@@ -1,0 +1,26 @@
+<h3 style="text-align: center;">Emi Calculator</h3><br />
+    <div class="m-4">
+        <form>
+            <div class="row mb-4">
+                <label class="col-sm-2">Enter Principal amount</label>
+                    <div class="col-sm-5">
+                        <input type="number" class="form-control" name="principal" [(ngModel)]="p" placeholder="Enter principal amount">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <label class="col-sm-2 col-form-label">Rate of Interest(in annual)</label>
+                    <div class="col-sm-5">
+                        <input type="number" class="form-control" name="rate" [(ngModel)]="r" placeholder="Enter Interest" required>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <label class="col-sm-2 col-form-label">Months</label>
+                    <div class="col-sm-5">
+                        <input type="number" class="form-control" name="time" [(ngModel)]="t" placeholder="Enter Tenure in months" required> 
+                    </div>
+                </div>
+                    <button type="button" class="btn btn-primary" (click)="emicalc()">Calculate Emi</button>
+                </form>
+            </div>
+<h6>Total Amount to be paid:Rs.<label id="totamt">{{totamt}}</label></h6>
+<h6>Total Interest:Rs.<label id="totint">{{totint}}</label></h6>

@@ -1,0 +1,33 @@
+<h3>Welcome Visitors</h3>
+<h6>You current balance is Rs.<label id="bal">{{result}}</label></h6>
+<div class="m-4">
+    <form>
+            <div class="row mb-4">
+                <label class="col-sm-2 col-form-label">Enter Initial Amount</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control" [(ngModel)]="initial" name="initial" placeholder="Enter atleast 5k">
+                </div>
+                <div class="col-sm-5 offset-sm-2">
+                    <button type="button" class="btn btn-primary" (click)="createAcc()">Create</button>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label class="col-sm-2 col-form-label">Deposit Money</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control" [(ngModel)]="deposited" name="deposited" placeholder="Enter Amount">
+                </div>
+                <div class="col-sm-5 offset-sm-2">
+                    <button type="button" class="btn btn-primary" (click)="depositmoney()">Deposit</button>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label class="col-sm-2 col-form-label">Withdraw Money</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control" [(ngModel)]="withdraw" name="withdraw" placeholder="Enter Amount">
+                </div>
+                <div class="col-sm-5 offset-sm-2">
+                    <button type="button" class="btn btn-primary" (click)="withdrawmoney()">Withdraw</button>
+                </div>
+            </div>
+        </form>
+    </div>

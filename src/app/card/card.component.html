@@ -1,0 +1,12 @@
+<h3>Credit Card Allocation</h3>
+<div class="form">
+    <div class="input-group input-group-sm mb-3">
+        <div class="input group prepend">
+            <label class="input group text" id="inputGroup-sizing-sm">Enter your Salary: Your Card is {{status}}</label>
+        </div>
+        <input type="text" [(ngModel)]="salary" placeholder="Input Salary" class="form-control" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="click">
+        <button type="button" class="btn btn-outline-dark" (click)="compute()">Click Me</button>
+    </div>
+</div>
